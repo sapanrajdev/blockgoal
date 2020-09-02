@@ -26,17 +26,17 @@ export class Blockgoal extends React.Component {
   movePlayer = e => {
     const self = this;
     const { margin } = self.state;
-    switch (e.key) {
-      case 'ArrowLeft':
+    switch (e.keyCode) {
+      case 37:
         margin['left'] = margin['left'] - 5;
         break;
-      case 'ArrowUp':
+      case 38:
         margin['top'] = margin['top'] - 5;
         break;
-      case 'ArrowDown':
+      case 40:
         margin['top'] = margin['top'] + 5;
         break;
-      case 'ArrowRight':
+      case 39:
         margin['left'] = margin['left'] + 5;
         break;
       default:
